@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 import setuptools
 
-with open("README.md", "r") as fh:
-    long_description = fh.read()
+# with open("README.md", "r") as fh:
+#     long_description = fh.read()
 
 setuptools.setup(
     name="try_pip",
     version="0.1.0",
-    author="matsunoshin",
+    author="Matsunoshin",
     # author_email="",
     description="You can receive the message 'Hello!!!'",
     long_description=long_description,
