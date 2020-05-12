@@ -3,9 +3,10 @@ import setuptools
 
 # with open("README.md", "r") as fh:
 #     long_description = fh.read()
+PACKAGE_NAME = "trypip"
 
 setuptools.setup(
-    name="trypip",
+    name=PACKAGE_NAME,
     version="0.1.0",
     author="Matsunoshin",
     # author_email="",
@@ -21,8 +22,20 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    entry_points = {
-        'console_scripts': ['trypip = trypip.trypip:main']
-    },
+    # entry_points = {
+    #     'console_scripts': ['trypip = trypip.trypip:main']
+    # },
     python_requires='>=3.6',
+    install_requires=[],
+    extras_require={
+        'dev': [
+            'pytest>=3',
+            'coverage',
+            'tox',
+        ],
+    },
+    entry_points='''
+        [console_scripts]
+        {app}={pkg}.cli:main
+    '''.format(app=PACKAGE_NAME.replace('_', '-'), pkg=PACKAGE_NAME),
 )
