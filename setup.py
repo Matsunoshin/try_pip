@@ -14,7 +14,7 @@ version = str(ast.literal_eval(match.group(1)))
 
 setuptools.setup(
     name=PACKAGE_NAME,
-    version="0.1.0",
+    version=version,
     author="Matsunoshin",
     # author_email="",
     description="You can receive the message 'Hello!!!'",
