@@ -10,7 +10,7 @@ setuptools.setup(
     author="Matsunoshin",
     # author_email="",
     description="You can receive the message 'Hello!!!'",
-    long_description=long_description,
+    # long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Matsunoshin/try_pip",
     packages=setuptools.find_packages(),
