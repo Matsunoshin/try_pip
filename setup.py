@@ -1,9 +1,16 @@
-#!/usr/bin/env python
+import ast
+import re
+import os
 import setuptools
 
 # with open("README.md", "r") as fh:
 #     long_description = fh.read()
+
 PACKAGE_NAME = "trypip"
+
+with open(os.path.join(PACKAGE_NAME, '__init__.py')) as f:
+    match = re.search(r'__version__\s+=\s+(.*)', f.read())
+version = str(ast.literal_eval(match.group(1)))
 
 setuptools.setup(
     name=PACKAGE_NAME,
