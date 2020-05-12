@@ -21,8 +21,7 @@ setuptools.setup(
     # long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Matsunoshin/trypip",
-    # packages=setuptools.find_packages(),
-    packages=[PACKAGE_NAME],
+    packages=setuptools.find_packages(),
     include_package_data=True,
     zip_safe=False,
     classifiers=[
