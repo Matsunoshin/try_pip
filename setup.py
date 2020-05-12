@@ -5,14 +5,14 @@ import setuptools
 #     long_description = fh.read()
 
 setuptools.setup(
-    name="try_pip",
+    name="trypip",
     version="0.1.0",
     author="Matsunoshin",
     # author_email="",
     description="You can receive the message 'Hello!!!'",
     # long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/Matsunoshin/try_pip",
+    url="https://github.com/Matsunoshin/trypip",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -20,7 +20,7 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     entry_points = {
-        'console_scripts': ['try_pip = try_pip.try_pip:main']
+        'console_scripts': ['trypip = trypip.trypip:main']
     },
     python_requires='>=3.6',
 )
