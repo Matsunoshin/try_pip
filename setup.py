@@ -19,30 +19,30 @@ setuptools.setup(
     # author_email="",
     description="You can receive the message'",
     # long_description=long_description,
-    long_description_content_type="text/markdown",
+    # long_description_content_type="text/markdown",
     url="https://github.com/Matsunoshin/trypip",
     packages=setuptools.find_packages(),
     include_package_data=True,
-    zip_safe=False,
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
-        "Operating System :: OS Independent",
-    ],
+    # zip_safe=False,
+    # classifiers=[
+    #     "Programming Language :: Python :: 3",
+    #     "License :: OSI Approved :: MIT License",
+    #     "Operating System :: OS Independent",
+    # ],
     # entry_points = {
     #     'console_scripts': ['trypip = trypip.trypip:main']
     # },
     python_requires='>=3.6',
-    install_requires=[],
-    extras_require={
-        'dev': [
-            'pytest>=3',
-            'coverage',
-            'tox',
-        ],
-    },
-    entry_points='''
-        [console_scripts]
-        {app}={pkg}.cli:main
-    '''.format(app=PACKAGE_NAME.replace('_', '-'), pkg=PACKAGE_NAME),
+    # install_requires=[],
+    # extras_require={
+    #     'dev': [
+    #         'pytest>=3',
+    #         'coverage',
+    #         'tox',
+    #     ],
+    # },
+    # entry_points='''
+    #     [console_scripts]
+    #     {app}={pkg}.cli:main
+    # '''.format(app=PACKAGE_NAME.replace('_', '-'), pkg=PACKAGE_NAME),
 )
