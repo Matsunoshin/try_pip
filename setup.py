@@ -17,7 +17,7 @@ setuptools.setup(
     version=version,
     author="Matsunoshin",
     # author_email="",
-    description="You can receive the message 'Hello!!!'",
+    description="You can receive the message'",
     # long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/Matsunoshin/trypip",
